@@ -18,7 +18,7 @@ In your HTML code, just add `data-action` to any `a`, `button` or `form`.
 </form>
 ```
 
-Any of those codes will send an action with a payload like this:
+And the helper will send a Flux action with a payload like this:
 
 ```javascript
 {
@@ -28,9 +28,6 @@ Any of those codes will send an action with a payload like this:
   template: // the template in where the action was triggered.
 }
 ```
-
-When using anchor, you need to set a `href`, but the event will prevent the
-default behaviour, so it won't be used. Setting it to `href='#'` works.
 
 ### License
 
